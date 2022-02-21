@@ -4,32 +4,40 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="index.css" />
     <title>Food Ordering</title>
   </head>
-  <body>
-    <nav>
-      <div class="logo">
-        <h4>At Home</h4>
+  <body class="container full-height-grow">
+    <header class="main-header">
+      <a href="/" class="Rlogo">
+        <div class="Rlogo-name"><h4>At Home</h4></div>
+      </a>
+      <nav class="nav-links">
+        <ul>
+          <!--Due to change, as this is for multiple page app and not spa-->
+          <li><a href="home.html">Home</a></li>
+          <li><a href="About.html">About Us</a></li>
+          <li><a href="Menu.html">Menu</a></li>
+          <li><a href="Resturant.html">Resturant</a></li>
+          <li><a href="Login.html">Log In</a></li>
+          <li><a href="Signup.html">Sign Up</a></li>
+        </ul>
+        <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+      </nav>
+    </header>
+    <section class="home-main-section">
+      <div class="img-wrapper">
+        <div class="header-image"></div>
       </div>
-      <ul class="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Menu</a></li>
-        <li><a href="#">Resturant</a></li>
-        <li><a href="#">Log In</a></li>
-        <li><a href="#">Sign Up</a></li>
-      </ul>
-      <div class="burger">
-        <div class="line1"></div>
-        <div class="line2"></div>
-        <div class="line3"></div>
+      <div class="call-to-action">
+        <a href="ordernow.html" class="ordernowBtn"> Order Now</a>
       </div>
-    </nav>
+    </section>
     <script src="app.js"></script>
   </body>
 </html>
