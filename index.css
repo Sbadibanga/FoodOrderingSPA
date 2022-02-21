@@ -1,0 +1,31 @@
+.home-main-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  flex-grow: 1;
+}
+.home-main-section .img.wrapper {
+  flex-grow: 1;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: absolute;
+}
+.home-main-section .header-image {
+  background-image: url("./images/header.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 900px;
+  height: 100vh;
+  border-radius: 1em;
+  position: absolute;
+}
+.home-main-section .call-to-action {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 1rem;
+  align-self: center;
+}
