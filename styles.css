@@ -1,12 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 *,
 *::before,
 *::after {
+  margin: 0px;
+  padding: 0px;
   box-sizing: border-box;
 }
 body {
-  padding: 0;
-  margin: 0;
   background-color: #ffe156;
   font-family: Poppins, sans-serif;
   font-size: 1.2rem;
@@ -14,19 +13,24 @@ body {
   min-height: 100vh;
 }
 .Rlogo {
-  display: flex;
-  align-items: center;
-  font-size: 1.3em;
   color: #fe5f00;
-  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 20px;
 }
-.Rlogo-name {
-  margin-left: 1em;
-}
-.nav-links ul {
+nav {
   display: flex;
-  margin: 0;
-  padding: 0;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  font-family: "Poppins", sans-serifs;
+}
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 40%;
+}
+.nav-links li {
   list-style: none;
 }
 .nav-links a {
@@ -34,33 +38,34 @@ body {
   text-decoration: none;
   padding: 1rem;
   letter-spacing: 1px;
-  font-size: 18px;
+  font-weight: bold;
+  font-size: 14px;
 }
-.nav-links a:hover {
-  color: #00000085;
+.homepageBox {
+  position: relative;
+  width: 1440px;
 }
-.main-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 140px;
+.homepageIMG {
+  width: 1440p;
+  background-image: url(images/header.jpg);
+  background-size: 100%;
+  height: 92vh;
+  top: 70px;
 }
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 40px;
-}
-.full-heigh-grow {
-  display: flex;
-  flex-direction: column;
-}
+
 .ordernowBtn {
-  color: #0a100d;
-  background-color: #fe5f00;
-  padding: 0.75rem 1.5rem;
-  border-radius: 0.5rem;
-  text-decoration: none;
-  font-size: 1em;
+  background-color: #ffe156;
+  color: #fe5f00;
+  font-size: 30px;
+  top: 80%;
+  left: 50%;
+  text-align: center;
+  padding: 16px 30px;
+  border: none;
+  border-radius: 6px;
+  position: absolute;
+  cursor: pointer;
+  transform: translate(-50%, -50%);
 }
 
 .burger {
@@ -76,7 +81,7 @@ body {
 }
 @media screen and (max-width: 1024px) {
   .nav-links {
-    width: 55%;
+    width: 60%;
   }
 }
 @media screen and (max-width: 768px) {
@@ -88,12 +93,14 @@ body {
     right: 0px;
     height: 92vh;
     top: 8vh;
-    background-color: #ffe156;
+    background-color: #fe5f00;
+    color: #ffe156;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 50%;
     transform: translate(100%);
+    transition: transform 0.3s ease-in;
   }
   .nav-links li {
     opacity: 0;
@@ -105,6 +112,7 @@ body {
 .nav-active {
   transform: translateX(0%);
 }
+
 @keyframes navLinkFade {
   from {
     opacity: 0;
