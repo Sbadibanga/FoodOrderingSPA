@@ -12,6 +12,7 @@ body {
   color: #fe5f00;
   min-height: 100vh;
 }
+/* navigation styles*/
 .Rlogo {
   color: #fe5f00;
   text-transform: uppercase;
@@ -41,6 +42,7 @@ nav {
   font-weight: bold;
   font-size: 14px;
 }
+/* homepage styles*/
 .homepageBox {
   position: relative;
   width: 1440px;
@@ -67,7 +69,47 @@ nav {
   cursor: pointer;
   transform: translate(-50%, -50%);
 }
+/* ---------
+ About us styles
+ .............*/
+.sec-padding {
+  padding: 80px 0;
+}
+.section-title {
+  color: #fe5f00;
+  width: 100%;
+  padding: 0 15px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+.section-title h2 {
+  font-size: 35px;
+  text-transform: uppercase;
+}
 
+.aboutsection {
+  background-color: inherit;
+}
+.about-text {
+  width: 50%;
+  padding: 0 15px;
+  font-size: 28px;
+}
+.about-IMG {
+  background-image: url(images/footer.jpg);
+  background-size: 100%;
+  width: 200px;
+  height: 200px;
+}
+.about-text h3 {
+}
+.IMG-box {
+  position: relative;
+  width: 400px;
+}
+/*---------------
+Resposive section
+-----------------*/
 .burger {
   display: none;
   cursor: pointer;
