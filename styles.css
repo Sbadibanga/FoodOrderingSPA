@@ -1,3 +1,6 @@
+/*--------------------
+global settings
+----------------------*/
 *,
 *::before,
 *::after {
@@ -12,7 +15,14 @@ body {
   color: #fe5f00;
   min-height: 100vh;
 }
-/* navigation styles*/
+/*.container {
+  max-width: 1170px;
+  background-color: #ffe156;
+  margin: auto;
+}
+/*--------------------
+Navigation starts here
+----------------------*/
 .Rlogo {
   color: #fe5f00;
   text-transform: uppercase;
@@ -69,11 +79,17 @@ nav {
   cursor: pointer;
   transform: translate(-50%, -50%);
 }
+
 /* ---------
  About us styles
  .............*/
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
 .sec-padding {
   padding: 80px 0;
+  height: 100vh;
 }
 .section-title {
   color: #fe5f00;
@@ -95,18 +111,61 @@ nav {
   padding: 0 15px;
   font-size: 28px;
 }
-.about-IMG {
-  background-image: url(images/footer.jpg);
-  background-size: 100%;
-  width: 200px;
-  height: 200px;
+.about-img,
+.about-text {
+  width: 50%;
+  padding: 0 15px;
 }
 .about-text h3 {
+  font-size: 30px;
+  text-transform: capitalize;
+  margin: 0 0 15px;
 }
-.IMG-box {
+.about-text p {
+  font-size: 25px;
+  margin: 0 0 15px;
+}
+.about-img img {
+  width: 100%;
+  border-radius: 10px;
+}
+.about-img .img-box {
   position: relative;
-  width: 400px;
 }
+.about-img .img-box h3 {
+  position: absolute;
+  background-color: #ffe156;
+  left: 50%;
+  top: 50%;
+  width: 100%;
+  max-width: 100%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  font-size: 25px;
+  font-family: sans-serif;
+}
+.about-btn {
+  background-color: #fe5f00;
+  color: #ffe156;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 6px;
+  padding: 16px 30px;
+  position: relative;
+  top: 30%;
+}
+/*---------------
+About us section ends here
+-----------------*/
+/*---------------
+Our menu section starts here
+-----------------*/
+.menu-section {
+  background-color: inherit;
+}
+/*---------------
+Our menu section ends here
+-----------------*/
 /*---------------
 Resposive section
 -----------------*/

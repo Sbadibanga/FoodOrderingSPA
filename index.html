@@ -12,16 +12,16 @@
     <title>Food Ordering</title>
   </head>
   <body class="container full-height-grow">
+    <!--Homepage section starts here-->
     <nav>
       <div class="Rlogo"><h4>At Home</h4></div>
       <ul class="nav-links">
-        <!--Due to change, as this is for multiple page app and not spa-->
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Menu</a></li>
-        <li><a href="#">Resturant</a></li>
-        <li><a href="#">Log In</a></li>
-        <li><a href="#">Sign Up</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#Resturant">Resturant</a></li>
+        <li><a href="#Login">Log In</a></li>
+        <li><a href="#SignUp">Sign Up</a></li>
       </ul>
       <div class="burger">
         <div class="line1"></div>
@@ -37,7 +37,7 @@
 
     <!--About us section starts here-->
     <section class="aboutSection sec-padding" id="about">
-      <div class="aboutusBox">
+      <div class="container">
         <div class="row">
           <div class="section-title">
             <h2>About Us</h2>
@@ -52,13 +52,38 @@
               can order here and get it delivered at home. Regardless you will
               be at home.
             </p>
+            <a href="menu" class="about-btn btn-default">Check Our Menu</a>
           </div>
-          <div class="aboutIMG">
-            <div class="IMG-box"></div>
+          <div class="about-img">
+            <div class="img-box">
+              <h3>15+ years of experience</h3>
+              <img src="images/footer.jpg" alt="about img" />
+            </div>
           </div>
         </div>
       </div>
     </section>
+    <!--About us section ends here-->
+    <!--menu section starts here-->
+    <section class="menu-section sec padding" id="menu">
+      <div class="container">
+        <div class="row">
+          <div class="section-title">
+            <h2>Our Menu</h2>
+          </div>
+        </div>
+        <div class="row menu-content">
+          <div class="menu-items">
+            <div class="menu-item-title">
+              <img src="images/meal1.jpg" alt="menu item tumbnail" />
+              <h3>Meal 1</h3>
+            </div>
+            <div class="menu-item-price">£12.99</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--menu section ends here-->
     <script src="app.js"></script>
   </body>
 </html>
