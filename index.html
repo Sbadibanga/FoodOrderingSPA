@@ -11,14 +11,14 @@
     />
     <title>Food Ordering</title>
   </head>
-  <body class="container full-height-grow">
-    <!--Homepage section starts here-->
+  <body>
+    <!--Header starts here -->
     <nav>
       <div class="Rlogo"><h4>At Home</h4></div>
       <ul class="nav-links">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About Us</a></li>
-        <li><a href="#menu">Menu</a></li>
+        <li><a href="#Our-menu">Menu</a></li>
         <li><a href="#Resturant">Resturant</a></li>
         <li><a href="#Login">Log In</a></li>
         <li><a href="#SignUp">Sign Up</a></li>
@@ -29,22 +29,31 @@
         <div class="line3"></div>
       </div>
     </nav>
-    <div class="homepageBox">
-      <div class="homepageIMG"></div>
-      <button class="ordernowBtn">Order Now</button>
-    </div>
+    <!--Header starts here -->
+    <!--Homepage section starts here-->
+    <section class="home-section" id="home">
+      <div class="home-bg"></div>
+      <div class="container">
+        <div class="row min-vh-100 align-items-center">
+          <div class="home-text" data-aos="fade-up" data-aos-duration="1000">
+            <h1>At Home Restaurant</h1>
+            <a href="#our-menu" class="btn btn-default">Order Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
     <!--Homepage section ends here-->
 
     <!--About us section starts here-->
-    <section class="aboutSection sec-padding" id="about">
+    <section class="about-section sec-padding" id="about">
       <div class="container">
         <div class="row">
           <div class="section-title">
-            <h2>About Us</h2>
+            <h2 data-aos="fade-up">About Us</h2>
           </div>
         </div>
         <div class="row">
-          <div class="about-text">
+          <div class="about-text" data-aos="fade-right">
             <h3>Welcome To AtHome</h3>
             <p>
               We specialise in good homemade food, and delivery it at yours. You
@@ -52,9 +61,9 @@
               can order here and get it delivered at home. Regardless you will
               be at home.
             </p>
-            <a href="menu" class="about-btn btn-default">Check Our Menu</a>
+            <a href="our-menu" class="btn btn-default">Check Our Menu</a>
           </div>
-          <div class="about-img">
+          <div class="about-img" data-aos="fade-left">
             <div class="img-box">
               <h3>15+ years of experience</h3>
               <img src="images/footer.jpg" alt="about img" />
@@ -70,15 +79,6 @@
         <div class="row">
           <div class="section-title">
             <h2>Our Menu</h2>
-          </div>
-        </div>
-        <div class="row menu-content">
-          <div class="menu-items">
-            <div class="menu-item-title">
-              <img src="images/meal1.jpg" alt="menu item tumbnail" />
-              <h3>Meal 1</h3>
-            </div>
-            <div class="menu-item-price">£12.99</div>
           </div>
         </div>
       </div>
